@@ -2,6 +2,9 @@ package core;
 
 import java.util.Vector;
 
+import core.printing.BasicElement;
+import core.printing.SimpleText;
+
 
 public class RiskAnalysisObject {
 	Tags tags = new Tags();
@@ -9,12 +12,19 @@ public class RiskAnalysisObject {
 	Vector<EbiosWarning> warnings = new Vector<EbiosWarning>();
 	private boolean enable = true;
 	protected String id = "";
-	protected String description;
+	protected BasicElement description;
 	
 	
 	
 	
 	
+	public RiskAnalysisObject(String id2) {
+		this.id=id2;
+	}
+
+
+
+
 	public boolean add(EbiosWarning e) {
 		return warnings.add(e);
 	}
@@ -107,7 +117,7 @@ public class RiskAnalysisObject {
 
 
 
-	public String getDescription() {
+	public BasicElement getDescription() {
 		return description;
 	}
 
@@ -115,6 +125,10 @@ public class RiskAnalysisObject {
 
 
 	public void setDescription(String description) {
+		this.description = new SimpleText(description);
+	}
+	
+	public void setDescription(BasicElement description) {
 		this.description = description;
 	}
 

@@ -50,7 +50,9 @@ public class CoverageTable {
 		ArrayList<RiskAnalysisObject> result = new ArrayList<RiskAnalysisObject>();
 		for (CoverageLink link: this.coverageTable){
 			if (link.coveringObject.equals(coveringObject)){
-				result.add(link.getCoveredObject());
+				if (link.coveredObject.isEnabled()){
+				  result.add(link.getCoveredObject());
+				}
 			}
 		}
 		return result;
@@ -61,7 +63,9 @@ public class CoverageTable {
 		ArrayList<RiskAnalysisObject> result = new ArrayList<RiskAnalysisObject>();
 		for (CoverageLink link: this.coverageTable){
 			if (link.getCoveredObject().equals(coveredObject)){
-				result.add(link.getCoveringObject());
+				if (link.getCoveringObject().isEnabled()){
+				  result.add(link.getCoveringObject());
+				}
 			}
 		}
 		return result;

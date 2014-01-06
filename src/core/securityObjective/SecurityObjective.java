@@ -2,11 +2,17 @@ package core.securityObjective;
 
 import java.util.ArrayList;
 
+import core.RiskAnalysisObject;
 import core.printing.BasicElement;
 import core.printing.SimpleText;
 
-public class SecurityObjective {
-	String id;
+public class SecurityObjective extends RiskAnalysisObject {
+	public SecurityObjective(String id2) {
+		super(id2);
+		
+	}
+
+	//String id;
 	BasicElement description;
 	private ArrayList<SecurityObjective> listSubObjective = new ArrayList<SecurityObjective>();
 	

@@ -1,6 +1,8 @@
 package core.asset;
 
 import core.RiskAnalysisObject;
+import core.printing.BasicElement;
+import core.printing.SimpleText;
 
 public class Functionnality extends RiskAnalysisObject {
 
@@ -8,7 +10,7 @@ public class Functionnality extends RiskAnalysisObject {
 	String detailedDescription = "";
 
 	public Functionnality(String name) {
-		this.name = name;
+		super(name);
 	}
 
 	
@@ -29,12 +31,12 @@ public class Functionnality extends RiskAnalysisObject {
 		this.name = name;
 	}
 
-	public String getDescription() {
+	public BasicElement getDescription() {
 		return description;
 	}
 
 	public void setDescription(String description) {
-		this.description = description;
+		this.description = new SimpleText(description);
 	}
 
 	public String getId() {

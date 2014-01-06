@@ -51,8 +51,8 @@ public boolean isLinkedToAnEssentialAsset(){
 }
 
 public Asset(String id) {
-	super();
-	this.id = id;
+	super(id);
+	
 }
 
 public ArrayList<SecurityNeed> getListOfSecurityNeed() {

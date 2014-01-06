@@ -23,6 +23,8 @@ public class RiskAnalysis {
 		public ArrayList<Asset> getAssetArrayList() {
 			return assetArrayList;
 		}
+
+		
 		
 		
 	}

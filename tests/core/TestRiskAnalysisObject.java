@@ -17,7 +17,7 @@ public class TestRiskAnalysisObject {
 
 	@Before
 	public void setUp() throws Exception {
-		sut = new RiskAnalysisObject();
+		sut = new RiskAnalysisObject("id");
 	}
 	
 	

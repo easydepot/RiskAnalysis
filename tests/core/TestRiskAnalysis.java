@@ -31,7 +31,7 @@ public class TestRiskAnalysis {
 	@Test
 	public void test_addThreat(){
 		RiskAnalysis p = new RiskAnalysis();
-		Threat t = new Threat();
+		Threat t = new Threat("id");
 		p.addThreat(t);
 		Assert.assertTrue(p.listeMenaceBienEssentiel.contains(t));
 	}
