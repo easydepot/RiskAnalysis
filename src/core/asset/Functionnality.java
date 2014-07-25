@@ -47,4 +47,11 @@ public class Functionnality extends RiskAnalysisObject {
 		this.id = id;
 	}
 
+
+
+	@Override
+	public String getFullId() {
+		return this.getId();
+	}
+
 }

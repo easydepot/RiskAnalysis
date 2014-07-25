@@ -6,7 +6,11 @@ public class Threat extends RiskAnalysisObject{
 
 	public Threat(String id2) {
 		super(id2);
-		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String getFullId() {
+		return "T"+this.getId();
 	}
 
 	

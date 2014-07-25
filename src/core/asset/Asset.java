@@ -67,6 +67,13 @@ public void addSecurityNeed(SecurityNeed securityNeed) {
   this.listOfSecurityNeed.add(securityNeed);	
 }
 
+@Override
+public String getFullId() {
+	return "A."+this.getId();
+}
+
+
+
  
   
   

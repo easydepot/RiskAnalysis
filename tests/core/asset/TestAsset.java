@@ -1,13 +1,21 @@
 package core.asset;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 import core.RiskAnalysisObject;
+import core.TestRiskAnalysisObject;
 import core.securityneed.Origin;
 
-public class TestAsset {
+public class TestAsset extends TestRiskAnalysisObject {
 
+	@Before
+	public void setUp() throws Exception {
+		sut = new Asset("id");
+	}
+	
+	Asset sut;
 	
 	
 	@Test

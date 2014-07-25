@@ -6,7 +6,7 @@ import junit.framework.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class TestRiskAnalysisObject {
+public abstract class TestRiskAnalysisObject {
 	
 	
 	private static final String TAG2 = "TAG2";
@@ -15,10 +15,7 @@ public class TestRiskAnalysisObject {
 	private static final String DESCRIPTION = "DESCRIPTION";
 	RiskAnalysisObject sut;
 
-	@Before
-	public void setUp() throws Exception {
-		sut = new RiskAnalysisObject("id");
-	}
+	
 	
 	
 	@Test

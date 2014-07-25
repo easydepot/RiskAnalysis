@@ -49,5 +49,9 @@ public class SecurityObjective extends RiskAnalysisObject {
 		list.addAll(listSubObjective);
 		return list;
 	}
+	@Override
+	public String getFullId() {
+		return "O."+this.getFullId();
+	}
 
 }

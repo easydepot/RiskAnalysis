@@ -6,7 +6,7 @@ import core.printing.BasicElement;
 import core.printing.SimpleText;
 
 
-public class RiskAnalysisObject {
+public abstract class RiskAnalysisObject {
 	Tags tags = new Tags();
 	EbiosConfig config;
 	Vector<EbiosWarning> warnings = new Vector<EbiosWarning>();
@@ -138,6 +138,10 @@ public class RiskAnalysisObject {
 	public String getId() {
 		return id;
 	}
+	
+	
+	
+	public abstract String getFullId() ;
 
 
 
