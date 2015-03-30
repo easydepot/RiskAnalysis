@@ -51,7 +51,7 @@ public class SecurityObjective extends RiskAnalysisObject {
 	}
 	@Override
 	public String getFullId() {
-		return "O."+this.getFullId();
+		return "O."+this.getId();
 	}
 
 }
